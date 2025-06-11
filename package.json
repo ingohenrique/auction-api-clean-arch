@@ -7,7 +7,10 @@
     "docker:start": "docker compose up -d",
     "docker:stop": "docker compose stop",
     "docker:clean": "docker compose rm -fsv",
-    "dev": "nodemon --watch src --exec 'ts-node' src/main.ts"
+    "dev": "nodemon --watch src --exec 'ts-node' src/main.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@hapi/hapi": "^21.3.9",
